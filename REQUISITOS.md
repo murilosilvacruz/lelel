@@ -11,14 +11,13 @@ Sistema web para auxiliar estudantes a se prepararem para provas escolares, perm
 - Formulário com:
   - **Seleção de tema:** Matemática, Física, Química, Biologia, História, Geografia.
   - **Campo aberto para tópico específico.**
-  - **Seleção de idioma:** Português (padrão) ou Inglês.
-  - **Campo obrigatório para e-mail do estudante.**
   - **Botões:** “Gerar Flashcards” e “Gerar Teste”.
 
 ### 2.2. Flashcards
 - Geração de 10 a 20 flashcards (pergunta e resposta) via IA.
 - Navegação entre flashcards.
 - Interface adaptada ao idioma selecionado.
+- Link (discreto) para gerar teste com base no mesmo tema e tópico selecionado.
 
 ### 2.3. Testes
 - Geração de 10 questões de múltipla escolha via IA (apenas uma alternativa correta por questão).
@@ -28,20 +27,7 @@ Sistema web para auxiliar estudantes a se prepararem para provas escolares, perm
   - Explicação gerada por IA para cada resposta.
 - Interface adaptada ao idioma selecionado.
 
-### 2.4. Histórico do Estudante
-- Exibição do histórico de temas/tópicos estudados, baseado no e-mail informado.
-- Não é possível editar ou apagar o histórico.
-
-### 2.5. Autenticação e Painel do Administrador
-- Autenticação obrigatória para acesso ao painel (usuário/senha).
-- Visualização de:
-  - Lista de e-mails que utilizaram o sistema.
-  - Número de acessos por estudante.
-  - Quantidade de flashcards e testes gerados por estudante.
-  - Datas dos acessos.
-- Painel disponível apenas em português.
-
-### 2.6. Política de Privacidade
+### 2.4. Política de Privacidade
 - Exibição de política de privacidade conforme LGPD, informando uso do e-mail e dados de uso apenas para fins de histórico e estatísticas.
 
 ---
@@ -73,7 +59,7 @@ Sistema web para auxiliar estudantes a se prepararem para provas escolares, perm
 
 ## 6. Fluxo Básico do Usuário
 
-1. Usuário acessa a tela inicial, escolhe tema, idioma, digita tópico e e-mail.
+1. Usuário acessa a tela inicial, escolhe tema, digita tópico.
 2. Seleciona se deseja flashcards ou teste.
 3. Recebe o conteúdo gerado e pode navegar/revisar.
-4. Ao finalizar, pode consultar seu histórico de temas/tópicos estudados.
+4. No topo de todas as telas do sistema, deve haver uma opção de mudar a lingua. A opção padrão deve ser Português do Brasil. Mas o usuário pode escolher entre inglês e português do Brasil. 
