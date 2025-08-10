@@ -1,6 +1,10 @@
 import type { NextConfig } from 'next';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+// Inferir basePath automaticamente no GitHub Actions, caso não seja fornecido
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? '';
+const inferredBasePath = process.env.GITHUB_ACTIONS && repoName ? `/${repoName}` : '';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || inferredBasePath || '';
 
 const nextConfig: NextConfig = {
   output: 'export',
